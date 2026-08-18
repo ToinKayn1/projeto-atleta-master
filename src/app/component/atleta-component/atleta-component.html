@@ -1,0 +1,104 @@
+<div id="div-form">
+  <h2>Cadastro Atleta</h2>
+
+  <form id="form-atleta" (ngSubmit)="salvarAtleta()">
+    <label for="nome">Nome</label>
+    <input
+      type="text"
+      name="nome"
+      [(ngModel)]="nome"
+      id="nome"
+      class="input01"
+      required
+      maxlength="80"
+      placeholder="Informe seu nome"
+    />
+
+    <label for="cpf">CPF</label>
+    <input
+      type="text"
+      name="cpf"
+      [(ngModel)]="cpf"
+      id="cpf"
+      class="input02"
+      required
+      maxlength="14"
+      placeholder="Informe seu CPF"
+    />
+
+    <label>Sexo</label>
+    <input type="radio" name="sexo" id="sexoM" value="M" [(ngModel)]="sexo" />
+    <label class="radio-label" for="sexoM">Masculino</label>
+
+    <input type="radio" name="sexo" id="sexoF" value="F" [(ngModel)]="sexo" />
+    <label class="radio-label" for="sexoF">Feminino</label>
+
+    <input type="radio" name="sexo" id="sexoN" value="N" [(ngModel)]="sexo" />
+    <label class="radio-label" for="sexoN">Não se identificar</label>
+
+    <label for="cep">CEP</label>
+    <input
+      type="text"
+      name="cep"
+      [(ngModel)]="cep"
+      id="cep"
+      class="input02"
+      required
+      maxlength="9"
+      placeholder="Informe seu CEP"
+    />
+
+    <label for="rua-logradouro">Rua/Logradouro</label>
+    <input
+      type="text"
+      name="ruaLogradouro"
+      [(ngModel)]="ruaLogradouro"
+      id="rua-logradouro"
+      class="input01"
+      required
+      maxlength="100"
+      placeholder="Informe a rua/logradouro"
+    />
+
+    <label for="bairro">Bairro</label>
+    <input
+      type="text"
+      name="bairro"
+      [(ngModel)]="bairro"
+      id="bairro"
+      class="input02"
+      required
+      maxlength="20"
+      placeholder="Informe seu bairro"
+    />
+
+    <label for="cidade">Cidade</label>
+    <input
+      type="text"
+      name="cidade"
+      [(ngModel)]="cidade"
+      id="cidade"
+      class="input02"
+      required
+      maxlength="60"
+      placeholder="Informe sua cidade"
+    />
+
+    <label for="uf">UF</label>
+    <input
+      type="text"
+      name="uf"
+      [(ngModel)]="uf"
+      id="uf"
+      class="input02"
+      required
+      maxlength="2"
+      placeholder="Informe sua UF"
+    />
+
+    <div id="div-btns">
+      <button type="submit" id="btnAdd">Cadastrar Atleta</button>
+      <button type="button" id="btnLimpar" (click)="limparAtributos()">Limpar</button>
+    </div>
+  </form>
+</div>

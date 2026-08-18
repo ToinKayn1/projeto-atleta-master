@@ -1,0 +1,74 @@
+#div-form {
+  width: min(1000px, 95%);
+  min-height: 650px;
+  margin: 20px auto;
+  padding: 25px;
+  color: var(--cor-secundaria);
+}
+
+h2 {
+  text-transform: uppercase;
+  color: var(--cor-botao1);
+  padding-bottom: 35px;
+}
+
+label {
+  display: block;
+  padding: 15px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+input {
+  height: 35px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+input[type='radio'] {
+  width: 18px;
+  height: 18px;
+  margin: 8px 5px 0 0;
+}
+
+.radio-label {
+  display: inline;
+  padding: 0 20px 0 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.input01 {
+  width: min(650px, 100%);
+}
+
+.input02 {
+  width: min(350px, 100%);
+}
+
+#div-btns {
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+}
+
+#btnAdd {
+  margin-right: 10px;
+  background-color: var(--cor-botao1);
+  color: var(--branca);
+}
+
+#btnLimpar {
+  margin-left: 10px;
+  background-color: var(--cor-botao2);
+  color: var(--branca);
+}
