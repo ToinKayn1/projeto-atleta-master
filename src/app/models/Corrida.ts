@@ -1,5 +1,6 @@
-export class Corridas{
-    id: number = 0
+export class Corrida {
+    id: number = 0;
+    nome: string = '';
     descricao_corrida: string = ''
     data_corrida: string = ''
     distancia5km: boolean = false

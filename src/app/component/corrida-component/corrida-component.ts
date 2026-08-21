@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CorridaService } from '../../corrida/corrida-service';
+import { Corrida } from '../../models/Corrida';
 
 @Component({
   selector: 'app-corrida-component',
@@ -10,7 +11,7 @@ import { CorridaService } from '../../corrida/corrida-service';
 })
 export class CorridaComponent {
 
-  id: = 0
+  id: number = 0;
   descricao_corrida = 'Corrida 400km'
   data_corrida = ''
   distancia5km = false
